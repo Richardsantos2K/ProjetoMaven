@@ -7,8 +7,8 @@ import java.util.Properties;
 
 public class AppTest {
 
-    private String userName = "apitestemail608@gmail.com";
-    private String password = "x w w d a d e b i c x d u k r p";
+    private String userName = "seu-email";
+    private String password = "sua senha de aplicativo gmail";
 
     @org.junit.Test
     public void testeEmail(){
@@ -29,7 +29,7 @@ public class AppTest {
                 }
             });
 
-            Address[] toUser = InternetAddress.parse("apitestemail608@gmail.com");
+            Address[] toUser = InternetAddress.parse("email que ira enviar");
 
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress(userName));//quem esta enviando
